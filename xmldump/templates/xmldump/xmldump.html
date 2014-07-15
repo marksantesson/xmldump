@@ -1,0 +1,19 @@
+
+<h1>XML Dump Demo</h1>
+
+(<a href='/admin'>admin site</a>)
+<br>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="Get-xml">XML -</label>
+    <input type="submit" name="cmd" value="Refresh">
+    <input type="submit" name="cmd" value="Load XML">
+    <input type="submit" name="cmd" value="Clear XML">
+    <input type="submit" name="cmd" value="Default XML"/>
+    <BR>
+    <textarea name="xml" rows="30" cols="120"
+        id="GET-xml" type="text" name="xml"
+        >{{xml}}</textarea>
+</form>
+
